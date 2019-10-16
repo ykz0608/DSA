@@ -4,7 +4,7 @@
 
 # Menu :
 * [Homework](#Homework)
-* [Learning Note](#Learningnote)
+* [Learning Note](#Learning_Note)
 * [About Me](#About_Me)
  
 # Homework
