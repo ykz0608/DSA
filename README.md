@@ -16,7 +16,7 @@
 * Week 1 : [學習資源](https://github.com/ykz0608/DSA/tree/master/week%201)
 * Week 2 : [Linked List](https://github.com/ykz0608/DSA/tree/master/week%202)
 * Week 3 : [Stack & Queue](https://github.com/ykz0608/DSA/tree/master/week%203)
-* Week 4: [Set](https://github.com/ykz0608/DSA/tree/master/week%204)
+* Week 4:  [Set](https://github.com/ykz0608/DSA/tree/master/week%204)
 * Week 5 : [InsertionSort、QuickSort](https://github.com/ykz0608/DSA/tree/master/week%205)
 * Week 6:  [Heap Sort](https://github.com/ykz0608/DSA/tree/master/week%206)
   
