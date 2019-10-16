@@ -1,7 +1,7 @@
 # 108 資料結構與演算法
 06170271 巨資三B 楊嘉政
 > HELLO,I am ykz Y_Y
-> lineID:ykz0608
+>* lineID:ykz0608
 >* [facebook](https://www.facebook.com/profile.php?id=100002000592772)
 >* [instagram](https://www.instagram.com/yongkahzin/)
 
