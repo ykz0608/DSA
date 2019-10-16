@@ -30,9 +30,12 @@
   * [155. Min Stack]()
   * [232. Implement Queue using Stacks]()
 * Week 3: (Set)
+  * [課堂ppt](https://docs.google.com/presentation/d/e/2PACX-1vT6BvB7aI9oLgyum8tdIgGVr8kabqtwo8KZV3ayzKKQqGkpAnvrjT3JabWu-Hms9kUaDILyCU8-Qqhl/pub?start=false&loop=false&delayms=3000&slide=id.p)
   * [645. Set Mismatch]()
 * Week 4 : (InsertionSort、QuickSort)
+  * [課堂ppt](https://docs.google.com/presentation/d/e/2PACX-1vSqz8sTxT4xyjgiz-htLvZd7FZ_5ZzgKf60pFEoNLU5S77JxrsGJ2vd15CdxlfLtT3g2aizHP-Ebk9b/pub?start=false&loop=false&delayms=3000&slide=id.p)
   * [147. Insertion Sort List]()
   * [quick sort_佔外部空間法]()
   * [quick sort_in_place 不佔外部空間法]()
-* Week  : 
+* Week 5:  (Heap Sort)
+  * [課堂ppt](https://docs.google.com/presentation/d/e/2PACX-1vRAGwnUvg6BcXoML5u9f4gO6YKcz0vXf7bDnPho_S7mG5D0SBR78djt91RKUPMxqNfkVIcu3l5WCXPh/pub?start=false&loop=false&delayms=3000&slide=id.p)
