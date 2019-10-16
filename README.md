@@ -3,11 +3,11 @@
 >* 巨資三B 楊嘉政 06170271
 
 # Menu :
-* [作業](#作業)
+* [Homework](#Homework)
 * [課堂筆記](#課堂筆記)
 * [About Me](#About_Me)
  
-# 作業
+# Homework
 1. [code 網頁版](https://nbviewer.jupyter.org/github/okpersist/108_1_DSA/blob/master/week4/quicksort_04113020.ipynb)
 2. [code Github版](https://github.com/okpersist/108_1_DSA/blob/master/week4/quicksort_04113020.ipynb)
 3. [流程圖](https://github.com/okpersist/108_1_DSA/blob/master/week4/quicksort.svg)
@@ -42,5 +42,3 @@
 - **主修學系**：Big Data Management（巨量資料管理）
 - **常用程式語言**：Python、R
 - **Email**: yongkahzin@gmail.com
-
-[Menu](#menu:)
