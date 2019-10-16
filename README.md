@@ -1,8 +1,10 @@
 # 108 資料結構與演算法
 06170271 巨資三B 楊嘉政
->HELLO,I am ykz Y_Y
+> HELLO,I am ykz Y_Y
+> lineID:ykz0608
 >* [facebook](https://www.facebook.com/profile.php?id=100002000592772)
->* [instagram(https://www.facebook.com/profile.php?id=100002000592772)
+>* [instagram](https://www.instagram.com/yongkahzin/)
+
 
 #自學資源
   * [Markdown 語法說明](https://github.com/othree/markdown-syntax-zhtw)
