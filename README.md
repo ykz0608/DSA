@@ -1,8 +1,8 @@
-# 108 資料結構與演算法
+# 108 DATA STRUCTURES AND ALGORITHMS
 >* HELLO,I am ykz Y_Y
 >* 巨資三B 楊嘉政 06170271
 
-# 目錄 :
+# Menu :
 * [自學資源](#自學資源)
 * [作業](#作業)
 * [課堂筆記](#課堂筆記)
@@ -46,3 +46,5 @@
 - **主修學系**：Big Data Management（巨量資料管理）
 - **常用程式語言**：Python、R
 - **Email**: yongkahzin@gmail.com
+
+[Menu](#Menu :)
