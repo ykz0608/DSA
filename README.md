@@ -8,8 +8,8 @@
 * [About Me](#About_Me)
  
 # Homework
-1. [nbviewer.ver](https://nbviewer.jupyter.org/github/ykz0608/DSA/blob/master/Homework/Quick%20Sort.ipynb)
-2. [Github.ver](https://github.com/ykz0608/DSA/blob/master/Homework/Quick%20Sort.ipynb)
+1. [nbviewer.ver](https://nbviewer.jupyter.org/github/ykz0608/DSA/blob/master/Homework/QuickSort.ipynb)
+2. [Github.ver](https://github.com/ykz0608/DSA/blob/master/Homework/QuickSort.ipynb)
 3. [流程圖]()
 
 # Learning_Note
