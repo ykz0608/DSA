@@ -21,9 +21,12 @@
 
 # 課堂/筆記
 * Week 1 : (Linked List) 
-  * [ppt](https://docs.google.com/presentation/d/e/2PACX-1vTB218-EdUZ5jpNz6Uv4TOZQc37Y281v128_aRcWC6EhkTQs5bS8fh7yysmcuzb9R2QPN6_PDshFWL_/pub?start=false&loop=false&delayms=3000&slide=id.p)
+  * [課堂ppt](https://docs.google.com/presentation/d/e/2PACX-1vTB218-EdUZ5jpNz6Uv4TOZQc37Y281v128_aRcWC6EhkTQs5bS8fh7yysmcuzb9R2QPN6_PDshFWL_/pub?start=false&loop=false&delayms=3000&slide=id.p)
+  * [課程實況錄影](https://www.youtube.com/watch?v=us0M3nytzoQ&feature=youtu.be)
   * [707. Design Linked List]()
 * Week 2 : (Stack & Queue)
+  * [課堂ppt](https://docs.google.com/presentation/d/e/2PACX-1vQ1hb79im0vqpApCttGnXAFRT8SqH9HQP0b_oyVRCV8SVyiHLkHJjidYGAfxkvq468QMumFIDdTeiB-/pub?start=false&loop=false&delayms=3000&slide=id.p)
+  
   * [155. Min Stack]()
   * [232. Implement Queue using Stacks]()
 * Week 3: (Set)
