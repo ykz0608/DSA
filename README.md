@@ -1,14 +1,11 @@
 # 108 資料結構與演算法
-06170271 巨資三B 楊嘉政
 > HELLO,I am ykz Y_Y
-* lineID:ykz0608
-* [Facebook](https://www.facebook.com/profile.php?id=100002000592772)
-* [Instagram](https://www.instagram.com/yongkahzin/)
 
 # 目錄 :
 * [自學資源](#自學資源)
 * [作業](#作業)
 * [課堂筆記](#課堂筆記)
+* [About Me](#About_Me)
  
 # 自學資源
 * [Markdown 語法說明](https://github.com/othree/markdown-syntax-zhtw)
@@ -37,7 +34,14 @@
   * [645. Set Mismatch]()
 * Week 4 : (InsertionSort、QuickSort)
   * [InsertionSort、QuickSort ppt](https://docs.google.com/presentation/d/e/2PACX-1vSqz8sTxT4xyjgiz-htLvZd7FZ_5ZzgKf60pFEoNLU5S77JxrsGJ2vd15CdxlfLtT3g2aizHP-Ebk9b/pub?start=false&loop=false&delayms=3000&slide=id.p)
-  * [Quick review of Quick Sort] (https://github.com/Alex-CHUN-YU/SortingAlogorithm/wiki/QuickSort)
+  * [Quick review of Quick Sort](https://github.com/Alex-CHUN-YU/SortingAlogorithm/wiki/QuickSort)
   * [147. Insertion Sort List]()
 * Week 5:  (Heap Sort)
   * [Heap Sort ppt](https://docs.google.com/presentation/d/e/2PACX-1vRAGwnUvg6BcXoML5u9f4gO6YKcz0vXf7bDnPho_S7mG5D0SBR78djt91RKUPMxqNfkVIcu3l5WCXPh/pub?start=false&loop=false&delayms=3000&slide=id.p)
+ 
+# About_Me
+- **姓名**：楊嘉政
+- **學校**：Soochow University（東吳大學）
+- **主修學系**：Big Data Management（巨量資料管理）
+- **常用程式語言**：Python、R
+- **Email**: yongkahzin@gmail.com
