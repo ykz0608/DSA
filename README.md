@@ -15,9 +15,6 @@
 # Learning_Note
 * Week 1 : [學習資源](https://github.com/ykz0608/DSA/tree/master/week%201)
 * Week 2 : [Linked List](https://github.com/ykz0608/DSA/tree/master/week%202)
-  * [Linked List ppt](https://docs.google.com/presentation/d/e/2PACX-1vTB218-EdUZ5jpNz6Uv4TOZQc37Y281v128_aRcWC6EhkTQs5bS8fh7yysmcuzb9R2QPN6_PDshFWL_/pub?start=false&loop=false&delayms=3000&slide=id.p)
-  * [課程實況錄影1](https://www.youtube.com/watch?v=us0M3nytzoQ&feature=youtu.be)
-  * [707. Design Linked List]()
 * Week 3 : [Stack & Queue](https://github.com/ykz0608/DSA/tree/master/week%203)
   * [Stack & Queue ppt](https://docs.google.com/presentation/d/e/2PACX-1vQ1hb79im0vqpApCttGnXAFRT8SqH9HQP0b_oyVRCV8SVyiHLkHJjidYGAfxkvq468QMumFIDdTeiB-/pub?start=false&loop=false&delayms=3000&slide=id.p)
   * [課程實況錄影2](https://www.youtube.com/watch?v=YBFq7kiIWtk&feature=youtu.be)
