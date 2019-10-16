@@ -8,9 +8,9 @@
 * [About Me](#About_Me)
  
 # Homework
-1. [code 網頁版](https://nbviewer.jupyter.org/github/okpersist/108_1_DSA/blob/master/week4/quicksort_04113020.ipynb)
-2. [code Github版](https://github.com/okpersist/108_1_DSA/blob/master/week4/quicksort_04113020.ipynb)
-3. [流程圖](https://github.com/okpersist/108_1_DSA/blob/master/week4/quicksort.svg)
+1. [nbviewer.ver](https://nbviewer.jupyter.org/github/ykz0608/DSA/blob/master/Homework/Quick%20Sort.ipynb)
+2. [Github.ver](https://github.com/ykz0608/DSA/blob/master/Homework/Quick%20Sort.ipynb)
+3. [流程圖]()
 
 # Learning_Note
 * Week 1 : [學習資源](https://github.com/ykz0608/DSA/tree/master/week%201)
