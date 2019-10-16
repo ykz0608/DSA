@@ -4,7 +4,7 @@
 
 # Menu :
 * [Homework](#Homework)
-* [課堂筆記](#課堂筆記)
+* [Class/Notes](#Class/Notes)
 * [About Me](#About_Me)
  
 # Homework
@@ -12,7 +12,7 @@
 2. [code Github版](https://github.com/okpersist/108_1_DSA/blob/master/week4/quicksort_04113020.ipynb)
 3. [流程圖](https://github.com/okpersist/108_1_DSA/blob/master/week4/quicksort.svg)
 
-# 課堂/筆記
+# Class/Notes
 * Week 1 : [學習資源](https://github.com/ykz0608/DSA/tree/master/week%201)
 * Week 2 : [Linked List](https://github.com/ykz0608/DSA/tree/master/week%202)
   * [Linked List ppt](https://docs.google.com/presentation/d/e/2PACX-1vTB218-EdUZ5jpNz6Uv4TOZQc37Y281v128_aRcWC6EhkTQs5bS8fh7yysmcuzb9R2QPN6_PDshFWL_/pub?start=false&loop=false&delayms=3000&slide=id.p)
