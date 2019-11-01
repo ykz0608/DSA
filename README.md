@@ -9,8 +9,8 @@
 * [東吳巨資 DSA (回應) - Google 試算表](https://docs.google.com/spreadsheets/d/1GUElSFg_KrUj2FxwP_iZsR5pF9t9MygTaHcKXfSt4sg/edit#gid=984502850)
  
 # Homework
-1. [HW1](https://github.com/ykz0608/DSA/tree/master/HW1)
-
+* [HW1](https://github.com/ykz0608/DSA/tree/master/HW1)
+* [HW2](https://github.com/ykz0608/DSA/tree/master/HW2)
 
 # Learning_Note
 * Week 1 : [學習資源](https://github.com/ykz0608/DSA/tree/master/week%201)
