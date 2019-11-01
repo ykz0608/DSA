@@ -19,7 +19,9 @@
 * Week 3 : [Stack & Queue](https://github.com/ykz0608/DSA/tree/master/week%203)
 * Week 4:  [Set](https://github.com/ykz0608/DSA/tree/master/week%204)
 * Week 5 : [InsertionSort、QuickSort](https://github.com/ykz0608/DSA/tree/master/week%205)
-* Week 6:  [Heap Sort](https://github.com/ykz0608/DSA/tree/master/week%206)
+* Week 6 : [Heap Sort](https://github.com/ykz0608/DSA/tree/master/week%206)
+* Week 7 : [Merge Sort](https://github.com/ykz0608/DSA/tree/master/week%207)
+* Week 8 : [Binary Tree](https://github.com/ykz0608/DSA/tree/master/week%208)
   
  
 # About_Me
