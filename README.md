@@ -9,9 +9,8 @@
 * [東吳巨資 DSA (回應) - Google 試算表](https://docs.google.com/spreadsheets/d/1GUElSFg_KrUj2FxwP_iZsR5pF9t9MygTaHcKXfSt4sg/edit#gid=984502850)
  
 # Homework
-1. [nbviewer.ver](https://nbviewer.jupyter.org/github/ykz0608/DSA/blob/master/Homework/QuickSort.ipynb)
-2. [Github.ver](https://github.com/ykz0608/DSA/blob/master/Homework/QuickSort.ipynb)
-3. [流程圖](https://github.com/ykz0608/DSA/blob/master/image/Untitled%20Diagram.svg)
+1. [HW1](https://github.com/ykz0608/DSA/tree/master/HW1)
+
 
 # Learning_Note
 * Week 1 : [學習資源](https://github.com/ykz0608/DSA/tree/master/week%201)
