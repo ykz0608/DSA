@@ -1,6 +1,7 @@
 # 108 DATA STRUCTURES AND ALGORITHMS
 >* HELLO,I am ykz Y_Y
 >* 巨資三B 楊嘉政 06170271
+>* 崇尚簡約
 
 # Menu :
 * [Homework](#Homework)
