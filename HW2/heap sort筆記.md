@@ -544,6 +544,13 @@
    ]
   },
   {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# 純程式碼"
+   ]
+  },
+  {
    "cell_type": "code",
    "execution_count": 134,
    "metadata": {},
@@ -603,6 +610,13 @@
     "    # result\n",
     "\n",
     "main(arr)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# 作業格式版本"
    ]
   },
   {
