@@ -213,17 +213,17 @@ output=[-74, -23, -21, -4, 21, 30, 31, 67, 77, 87]
 4. 然後交換到新序列裡
 5. 重複指導排序完成
 
-# 直接賦值和 copy 的區別
+### 直接賦值和 copy 的區別
 dict1 =  {'user':'runoob','num':[1,2,3]}
  
 dict2 = dict1          # 淺拷貝: 引用對象
 dict3 = dict1.copy()   # 淺拷貝：深拷貝父對象（一級目錄），子對象（二級目錄）不拷貝，還是引用
  
-# 修改 data 數據
+### 修改 data 數據
 dict1['user']='root'
 dict1['num'].remove(1)
  
-# 輸出結果
+### 輸出結果
 print(dict1)
 print(dict2)
 print(dict3)
@@ -231,3 +231,173 @@ print(dict3)
 {'num': [2, 3], 'user': 'root'}
 {'num': [2, 3], 'user': 'root'}
 {'num': [2, 3], 'user': 'runoob'}
+
+# flow
+```python=
+import random
+import pandas 
+import numpy as np
+
+x = np.random.randint(-100,100,10)
+arr = x.tolist()
+
+def MinH(data,i):
+    left = 2 * i + 1
+    right = 2 * i + 2
+    n = len(data)-1
+    s = i 
+    if left <= n and data[left] < data[i]:
+        s = left
+    if right <= n and data[right] < data[s] :
+        s = right
+    if s != i:
+        data[i],data[s] = data[s],data[i]
+        MinH(data,s)
+
+def HeapS(data):
+    data = data.copy()
+    for i in reversed(range(len(data)//2)):
+        MinH(data,i)
+    print('a,',data)
+    sort_d = []
+    for _ in range(len(data)):
+        data[0],data[-1] = data[-1],data[0]
+        sort_d.append(data.pop())
+        MinH(data,0)
+        print('b',data,sort_d)
+        print('c',data,sort_d)
+    return sort_d
+        
+def main(data):
+    HeapS(data)
+    print('fianl result=',HeapS(data))
+
+main(arr)
+```
+result=
+```python=
+a [-94, -67, -65, 2, -57, 68, 23, 83, 22, -16]
+b [-67, -57, -65, 2, -16, 68, 23, 83, 22] [-94]
+c [-67, -57, -65, 2, -16, 68, 23, 83, 22] [-94]
+b [-65, -57, 22, 2, -16, 68, 23, 83] [-94, -67]
+c [-65, -57, 22, 2, -16, 68, 23, 83] [-94, -67]
+b [-57, -16, 22, 2, 83, 68, 23] [-94, -67, -65]
+c [-57, -16, 22, 2, 83, 68, 23] [-94, -67, -65]
+b [-16, 2, 22, 23, 83, 68] [-94, -67, -65, -57]
+c [-16, 2, 22, 23, 83, 68] [-94, -67, -65, -57]
+b [2, 23, 22, 68, 83] [-94, -67, -65, -57, -16]
+c [2, 23, 22, 68, 83] [-94, -67, -65, -57, -16]
+b [22, 23, 83, 68] [-94, -67, -65, -57, -16, 2]
+c [22, 23, 83, 68] [-94, -67, -65, -57, -16, 2]
+b [23, 68, 83] [-94, -67, -65, -57, -16, 2, 22]
+c [23, 68, 83] [-94, -67, -65, -57, -16, 2, 22]
+b [68, 83] [-94, -67, -65, -57, -16, 2, 22, 23]
+c [68, 83] [-94, -67, -65, -57, -16, 2, 22, 23]
+b [83] [-94, -67, -65, -57, -16, 2, 22, 23, 68]
+c [83] [-94, -67, -65, -57, -16, 2, 22, 23, 68]
+b [] [-94, -67, -65, -57, -16, 2, 22, 23, 68, 83]
+c [] [-94, -67, -65, -57, -16, 2, 22, 23, 68, 83]
+```
+
+# 純程式碼+文字說明
+```python=
+import random
+import pandas 
+import numpy as np
+
+x = np.random.randint(-100,100,10)
+    #隨機生成數字
+arr = x.tolist()
+
+def MinH(data,i):
+    n = len(data)-1 #長度
+    left = 2 * i + 1
+    #proof
+    # if root=0,left1=2*0+2=2,
+    # if root=1,left2=2*1+2=4,
+    right = 2 * i + 2
+    #proof
+    # if root=0,left1=2*0+1=1
+    # if root=1,left2=2*1+1=3
+    s = i  #建立root
+    if left <= n and data[left] < data[i]:
+        s = left # 判斷 left
+    if right <= n and  data[right] < data[s]:
+        s = right# 判斷 right
+    if s != i: #改變root
+        data[i],data[s] = data[s],data[i]
+        MinH(data,s)
+
+def HeapS(data):
+    data = data.copy()
+    for i in reversed(range(len(data)//2)):
+        MinH(data,i)
+        #從最後一層的第二個節點疊代到根節點
+    sort_d = []#建立newlist
+    for _ in range(len(data)):
+        data[0],data[-1] = data[-1],data[0]
+        sort_d.append(data.pop()) 
+        MinH(data,0)
+    #swap list[0] remove append to new list
+    return sort_d
+        
+def main(data):
+    HeapS(data)
+    print(HeapS(data))
+    # result
+
+main(arr)
+```
+result=
+```python=
+
+[-45, -40, -36, -13, -1, 2, 7, 38, 51, 76]
+```
+# 作業格式版本
+```python=
+class Solution(object):
+    #import random
+    #import pandas 
+    #import numpy as np
+
+    #x = np.random.randint(-100,100,10)
+    #arr = x.tolist()
+
+    def MinH(self,data,i):
+        n = len(data)-1
+        left = 2 * i + 1
+        right = 2 * i + 2
+        s = i 
+        if left <= n and data[left] < data[i]:
+            s = left
+        if right <= n and data[right] < data[s] :
+            s = right
+        if s != i:
+            data[i],data[s] = data[s],data[i]
+            self.MinH(data,s)
+            
+    def heap_sort(self,data):
+        data = data.copy()
+        for i in reversed(range(len(data)//2)):
+            self.MinH(data,i)
+        sort_d = []
+        for _ in range(len(data)):
+            data[0],data[-1] = data[-1],data[0]
+            sort_d.append(data.pop())
+            self.MinH(data,0)
+        return sort_d
+    
+    #def main(data):
+    #HeapS(data)
+    #print(HeapS(data))
+    # result
+    
+```
+result=
+```python=
+output=Solution().heap_sort([72,2,-4,54,87,0,19])
+output
+
+[-4, 0, 2, 19, 54, 72, 87]
+
+```
