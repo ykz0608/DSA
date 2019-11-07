@@ -21,21 +21,6 @@ heap sort 是什麽？
 * 是利用堆性質的一種選擇排序，在堆頂選出最大值或者最小值
 * 堆排序的時間複雜度為O(nlogn)。
 * 由於堆排序對原始記錄的排序狀態並不敏感，因此它無論是最好、最壞和平均時間複雜度均為O(nlogn)。
-## 參考資料
-
-### 參考網站:
->* https://github.com/pecu/DSA/blob/master/06_HeapSort/heapSort.py
->* https://openhome.cc/Gossip/AlgorithmGossip/HeapSort.htm#Python
->* http://www.pianshen.com/article/7788199455/
->* https://www.iteye.com/blog/2057-1897176
->* https://blog.csdn.net/weixin_37621790/article/details/86695537
->* https://blog.csdn.net/huang_yong_peng/article/details/81879990
->* https://www.cnblogs.com/yinzhengjie/p/10970889.html
->* https://www.runoob.com/python/att-dictionary-copy.html
->* https://towardsdatascience.com/data-structure-heap-23d4c78a6962
->* https://github.com/python/cpython/blob/master/Lib/heapq.py
->* https://docs.python.org/3/library/heapq.html
->* https://www.geeksforgeeks.org/iterative-heap-sort/
 
 可以用的package **heapq**
 ```python=
@@ -401,3 +386,18 @@ output
 [-4, 0, 2, 19, 54, 72, 87]
 
 ```
+## 參考資料
+
+### 參考網站:
+>* https://github.com/pecu/DSA/blob/master/06_HeapSort/heapSort.py
+>* https://openhome.cc/Gossip/AlgorithmGossip/HeapSort.htm#Python
+>* http://www.pianshen.com/article/7788199455/
+>* https://www.iteye.com/blog/2057-1897176
+>* https://blog.csdn.net/weixin_37621790/article/details/86695537
+>* https://blog.csdn.net/huang_yong_peng/article/details/81879990
+>* https://www.cnblogs.com/yinzhengjie/p/10970889.html
+>* https://www.runoob.com/python/att-dictionary-copy.html
+>* https://towardsdatascience.com/data-structure-heap-23d4c78a6962
+>* https://github.com/python/cpython/blob/master/Lib/heapq.py
+>* https://docs.python.org/3/library/heapq.html
+>* https://www.geeksforgeeks.org/iterative-heap-sort/
