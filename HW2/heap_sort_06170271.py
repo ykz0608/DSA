@@ -35,4 +35,4 @@ class Solution(object):
     #print(HeapS(data))
     # result
     
-List[int] = Solution().merge_sort(data)
+List[int] = Solution().heap_sort(data)
