@@ -494,6 +494,7 @@ output
 >* https://www.geeksforgeeks.org/merge-sort/
 >* https://www.cnblogs.com/xxtalhr/p/10800699.html
 >* https://www.geeksforgeeks.org/python-program-for-merge-sort/
+>* https://runestone.academy/runestone/books/published/pythonds/SortSearch/TheMergeSort.html
 
 
 ```python
