@@ -309,40 +309,7 @@ print('test3',split(z1))
 ### renew.ver
 
 
-```python
-def merge(left,right):
-    lena = len(left)
-    lenb = len(right)
-    i = 0
-    j = 0
-    c = []
-    while True:
-        if j == lena and j == lenb:
-            break
-        elif 0 == lenb:
-            array.append(a[i])
-            i += 1
-        elif 0 == lena:
-            array.append(b[j])
-            j += 1
-        elif a[i] <= b[j]:
-            array.append(a[i])
-            i += 1
-        else:
-            array.append(b[j])
-            j += 1
 
-    return c
-
-def merge_sort(data):
-    """ Function to sort an array using merge sort algorithm """
-    if len(data) <= 1:
-        return data
-    else:
-        mid = len(data)//2
-        left = merge_sort(data[:mid])
-        right = merge_sort(data[mid:])
-        return merge(left,right)
 ```
 
 
