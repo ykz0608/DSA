@@ -24,13 +24,13 @@ import random
 import pandas 
 import numpy as np
 
-x = np.random.randint(0,10,8)
+x = np.random.randint(-100,100,10)
 #隨機生成數字
 arr = x.tolist()
 print("測試數值=",arr)
 ```
 
-    測試數值= [1, 5, 9, 4, 2, 5, 9, 1]
+    測試數值= [-42, -67, 57, 79, 90, 21, 59, -100, -29, -100]
     
 
 
@@ -45,7 +45,7 @@ left,right
 
     TypeError                                 Traceback (most recent call last)
 
-    <ipython-input-12-0e26ca2894d6> in <module>
+    <ipython-input-384-0e26ca2894d6> in <module>
     ----> 1 left = arr[:len(arr)/2]
           2 right = arr[len(arr/2):]
           3 left,right
@@ -68,7 +68,7 @@ left,right
 
     TypeError                                 Traceback (most recent call last)
 
-    <ipython-input-13-e1835a9f12b9> in <module>
+    <ipython-input-385-e1835a9f12b9> in <module>
           1 left = arr[:len(arr)//2]
     ----> 2 right = arr[len(arr//2):]
           3 left,right
@@ -90,7 +90,7 @@ left,right
 
 
 
-    ([1, 5, 9, 4], [2, 5, 9, 1])
+    ([-42, -67, 57, 79, 90], [21, 59, -100, -29, -100])
 
 
 
@@ -114,11 +114,11 @@ split(arr)
 
     RecursionError                            Traceback (most recent call last)
 
-    <ipython-input-72-beeb403777db> in <module>
+    <ipython-input-407-beeb403777db> in <module>
     ----> 1 split(arr)
     
 
-    <ipython-input-71-75a8338c7e45> in split(data)
+    <ipython-input-406-75a8338c7e45> in split(data)
           3     left = data[:mid]
           4     right = data[mid:]
     ----> 5     split(left),split(right)
@@ -128,7 +128,7 @@ split(arr)
     ... last 1 frames repeated, from the frame below ...
     
 
-    <ipython-input-71-75a8338c7e45> in split(data)
+    <ipython-input-406-75a8338c7e45> in split(data)
           3     left = data[:mid]
           4     right = data[mid:]
     ----> 5     split(left),split(right)
@@ -143,7 +143,7 @@ split(arr)
 
 ```python
 def split(data):
-    if len(data)//2 <= 0:
+    if len(data)//2 == 0:
         return data
     else:
         mid = len(data)//2
@@ -163,7 +163,8 @@ split(arr)
 
 
 
-    [[[[1], [5]], [[9], [4]]], [[[2], [5]], [[9], [1]]]]
+    [[[[-42], [-67]], [[57], [[79], [90]]]],
+     [[[21], [59]], [[-100], [[-29], [-100]]]]]
 
 
 
@@ -172,64 +173,362 @@ split(arr)
 
 ```python
 def split(data):
-    if len(data)//2 <= 0:
+    if len(data)//2 == 0:
         return data
     else:
         mid = len(data)//2
         left = data[:mid]
         right = data[mid:]
-    left = split(left)
-    right = split(right)
+        left = split(left)
+        right = split(right)
     return [left,right]
     
-    p=0
-    q=0
-    if left[] < []
-    p
-```
-
-
-```python
-def merge(left, right):
-    res = []
-    while left and right:
-        if left[0] < right[0]:
-            res.append(left.pop(0))
+    i=0
+    j=0
+    y=0
+    while i != 0 and j != 0:
+        if left[i] <= right[j]:
+            data[y] = left[i]
+            i = i+1
         else:
-            res.append(right.pop(0))
-    res = res + left + right
-    return res
+            data[y] = right[j]
+            j=j+1
+        y=y+1
+    while i != 0:
+        data[y] = left[i]
+        i = i+1
+        k=k+1
+    while j!=0:
+        data[y] = right[j]
+        j=j+1
+        k=k+1
+            
+    return data
+            
+        
+            
+```
 
-def mergesort(lists):
-    if len(lists) <= 1:
-        return lists
-    mid = len(lists)//2
-    left = mergesort(lists[:mid])
-    right = mergesort(lists[mid:])
-    return merge(left,right)
+沒有變化！逻辑應該沒错？！
+
+
+```python
+split(arr)
+```
+
+
+
+
+    [[[[-42], [-67]], [[57], [[79], [90]]]],
+     [[[21], [59]], [[-100], [[-29], [-100]]]]]
+
+
+
+```python
+發現這邊需要改 這裏不需要結束條件
+
+if len(data)//2 == 0:
+        return data
+    else:
+        mid = len(data)//2
+        left = data[:mid]
+        right = data[mid:]
+        left = split(left)
+        right = split(right)
+    return [left,right]
+
 
 ```
 
 
 ```python
-def print_lol(the_list,level):
-    for each_item in the_list:
-        if isinstance(each_item,list):
-            print_lol(each_item,level+1)
+def split(data):
+    if len(data)>1:
+        mid = len(data)//2
+        left = data[:mid]
+        right = data[mid:]
+        split(left)
+        split(right)
+        
+        i = 0
+        j = 0
+        y = 0
+        while i < len(left) and j < len(right):
+            if left[i] <= right[j]:
+                data[y] = left[i]
+                i += 1
+            else:
+                data[y] = right[j]
+                j+=1
+            y += 1
+        
+        while i < len(left):
+            data[y] = left[i]
+            i += 1
+            y += 1
+        
+        while j < len(right):
+            data[y] = right[j]
+            j += 1
+            y += 1
+        
+    return data
+```
+
+
+```python
+split(arr)
+```
+
+
+
+
+    [-100, -100, -67, -42, -29, 21, 57, 59, 79, 90]
+
+
+
+
+```python
+z = [85, -66, -24, 91, -15, 36, 33, 24, 3, -53]
+z1= [1, 0, 8, 18, 13, 17, 19, 42, 32]
+print('test2',split(z))
+```
+
+    test2 [-66, -53, -24, -15, 3, 24, 33, 36, 85, 91]
+    
+
+
+```python
+z1= [1, 0, 8, 18, 13, 17, 19, 42, 32]
+print('test3',split(z1))
+```
+
+    test3 [0, 1, 8, 13, 17, 18, 19, 32, 42]
+    
+
+### renew.ver
+
+
+```python
+def merge(left,right):
+    lena = len(left)
+    lenb = len(right)
+    i = 0
+    j = 0
+    c = []
+    while True:
+        if j == lena and j == lenb:
+            break
+        elif 0 == lenb:
+            array.append(a[i])
+            i += 1
+        elif 0 == lena:
+            array.append(b[j])
+            j += 1
+        elif a[i] <= b[j]:
+            array.append(a[i])
+            i += 1
         else:
-            for tab_stop in range(level):
-                print('\t',end='')
-            print(each_item)
+            array.append(b[j])
+            j += 1
+
+    return c
+
+def merge_sort(data):
+    """ Function to sort an array using merge sort algorithm """
+    if len(data) <= 1:
+        return data
+    else:
+        mid = len(data)//2
+        left = merge_sort(data[:mid])
+        right = merge_sort(data[mid:])
+        return merge(left,right)
 ```
 
 
 ```python
-mergesort(arr)
+z4= [67, 0, 8, 90, 13, 17, 19, 42, 32]
+merge_sort(z4)
+```
+
+
+    ---------------------------------------------------------------------------
+
+    TypeError                                 Traceback (most recent call last)
+
+    <ipython-input-532-84940d3ef3af> in <module>
+          1 z4= [67, 0, 8, 90, 13, 17, 19, 42, 32]
+    ----> 2 merge_sort(z4)
+    
+
+    <ipython-input-531-1d6e68902027> in merge_sort(data)
+         29     else:
+         30         mid = len(data)//2
+    ---> 31         left = merge_sort(data[:mid])
+         32         right = merge_sort(data[mid:])
+         33         return merge(left,right)
+    
+
+    <ipython-input-531-1d6e68902027> in merge_sort(data)
+         29     else:
+         30         mid = len(data)//2
+    ---> 31         left = merge_sort(data[:mid])
+         32         right = merge_sort(data[mid:])
+         33         return merge(left,right)
+    
+
+    <ipython-input-531-1d6e68902027> in merge_sort(data)
+         31         left = merge_sort(data[:mid])
+         32         right = merge_sort(data[mid:])
+    ---> 33         return merge(left,right)
+    
+
+    <ipython-input-531-1d6e68902027> in merge(left, right)
+         14             array.append(b[j])
+         15             j += 1
+    ---> 16         elif a[i] <= b[j]:
+         17             array.append(a[i])
+         18             i += 1
+    
+
+    TypeError: 'int' object is not subscriptable
+
+
+
+```python
+def merge(a,b):
+    lena = len(a)
+    lenb = len(b)
+    i_a = 0
+    i_b = 0
+    c = []
+    while True:
+        if i_a == lena and i_b == lenb:
+            break
+        elif i_b == lenb:
+            c.append(a[i_a])
+            i_a += 1
+        elif i_a == lena:
+            c.append(b[i_b])
+            i_b += 1
+        elif a[i_a] <= b[i_b]:
+            c.append(a[i_a])
+            i_a += 1
+        else:
+            c.append(b[i_b])
+            i_b += 1
+
+    return c
+
+# Code for merge sort
+
+def mergesort(x):
+    if len(x) == 0 or len(x) == 1:
+        return x
+    else:
+        middle = len(x)//2
+        a = mergesort(x[:middle])
+        b = mergesort(x[middle:])
+        return merge(a,b)
+```
+
+# 純程式碼+文字說明
+
+
+```python
+def merge_sort(data):
+    if len(data)>1:#結束條件
+        mid = len(data)//2
+        left = data[:mid]#左半部
+        right = data[mid:]#右半部
+        merge_sort(left)
+        merge_sort(right)
+        
+        i = 0
+        j = 0
+        y = 0
+        while i < len(left) and j < len(right):
+            if left[i] <= right[j]: # if left<right i
+                data[y] = left[i]
+                i += 1
+            else:
+                data[y] = right[j]
+                j+=1
+            y += 1
+        
+        while i < len(left):
+            data[y] = left[i]
+            i += 1
+            y += 1
+        
+        while j < len(right):
+            data[y] = right[j]
+            j += 1
+            y += 1
+        
+    return data
+```
+
+# 作業格式版本
+
+
+```python
+class Solution(object):    
+    def merge_sort(self,data):
+        if len(data)>1:
+            mid = len(data)//2
+            left = data[:mid]
+            right = data[mid:]
+            self.merge_sort(left)
+            self.merge_sort(right)
+            
+            i = 0
+            j = 0
+            y = 0
+            while i < len(left) and j < len(right):
+                if left[i] <= right[j]:
+                    data[y] = left[i]
+                    i += 1
+                else:
+                    data[y] = right[j]
+                    j+=1
+                y += 1
+            
+            while i < len(left):
+                data[y] = left[i]
+                i += 1
+                y += 1
+            
+            while j < len(right):
+                data[y] = right[j]
+                j += 1
+                y += 1
+            
+        return data
+```
+
+
+```python
+output=Solution().merge_sort([72,2,-4,54,87,0,19])
+output
 ```
 
 
 
 
-    [1, 1, 2, 4, 5, 5, 9, 9]
+    [-4, 0, 2, 19, 54, 72, 87]
 
 
+
+# 參考資料
+
+參考網站:
+
+>* https://www.geeksforgeeks.org/merge-sort/
+>* https://www.cnblogs.com/xxtalhr/p/10800699.html
+>* https://www.geeksforgeeks.org/python-program-for-merge-sort/
+
+
+```python
+
+```
