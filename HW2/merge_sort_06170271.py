@@ -30,3 +30,5 @@ class Solution(object):
                 y += 1
             
         return data
+ 
+List[int] = Solution().merge_sort(data)
