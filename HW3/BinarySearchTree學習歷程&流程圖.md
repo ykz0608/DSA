@@ -60,6 +60,7 @@ class Solution(object):
 
 # 流程圖
 * insert
+*
 ![](https://github.com/ykz0608/DSA/blob/master/image/binarysearchtree-insert.svg)
 * case1:待刪除節點既無左子樹也無右子樹：直接刪除該節點即可
 ![](https://github.com/ykz0608/DSA/blob/master/image/binarysearchtree-delete%20case%201.svg)
