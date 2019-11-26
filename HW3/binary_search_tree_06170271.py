@@ -80,11 +80,16 @@ class Solution(object):
         return root
     
     def modify(self, root, target, new_val):
-        if root:
+        if root == None:
+            return False
+        else:
             if root.val == target:
                 root.val = new_val
-            if target < root.val:
-                root.left = self.modify(root.left, target, new_val)
-            if target > root.val:
-                root.right = self.modify(root.right, target, new_val)
+                
+            if root.left:
+                self.modify(root.left, target, new_val)
+        
+            if root.right:
+                self.modify(root.right, target, new_val)
+            
         return root
