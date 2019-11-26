@@ -46,3 +46,35 @@ class Solution(object):
             return self.search(root.left,target)
         elif target > root.val:
             return self.search(root.right,target)
+        
+       def findMin(self, root):
+        if root.left:
+            return self.findMin(root.left)
+        else:
+            return root
+        
+    def findMax(self, root):
+        if root.right:
+            return self.findMax(root.right)
+        else:
+            return root
+        
+    def delete(self, root, target):
+        if root == None:
+            return 
+        if target < root.val:
+            root.left = self.delete(root.left, target)
+        elif target > root.val:
+            root.right = self.delete(root.right, target)
+        else:
+            if root.left and root.right:
+                temp = self.findMin(root.right)
+                root.val = temp.val
+                root.right = self.delete(root.right, temp.val)
+            elif root.right == None and root.left == None:
+                root = None
+            elif root.right == None:
+                root = root.left
+            elif root.left == None:
+                root = root.right
+        return root
