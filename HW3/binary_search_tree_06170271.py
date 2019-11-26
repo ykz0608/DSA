@@ -5,13 +5,22 @@ class TreeNode(object):
         self.right = None
 
 class Solution(object):
+    def __init__(self):
+        self.root = None
+        
     def insert(self, root, val):
         if root == None:
             root = TreeNode(val)
         elif val <= root.val:
-            root.left = self.insert(root.left, val)
+            if root.val == None:
+                root.left= TreeNode(val)
+            else:
+                root.left = self.insert(root.left, val)
         elif val > root.val:
-            root.right = self.insert(root.right, val)
+            if root.val == None:
+                root.right= TreeNode(val)
+            else:
+                root.right = self.insert(root.right, val)
         return root
     
    
