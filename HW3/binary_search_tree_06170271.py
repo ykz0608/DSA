@@ -47,7 +47,7 @@ class Solution(object):
         elif target > root.val:
             return self.search(root.right,target)
         
-       def findMin(self, root):
+    def findMin(self, root):
         if root.left:
             return self.findMin(root.left)
         else:
