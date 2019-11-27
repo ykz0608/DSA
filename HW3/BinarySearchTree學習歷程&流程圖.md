@@ -439,6 +439,7 @@ class Solution(object):
             return self.search(root.left,target)
         elif target > root.val:
             return self.search(root.right,target)
+    
 ```
 
 
@@ -453,20 +454,13 @@ root.right.left.left = TreeNode(6)
 root.right.right = TreeNode(10)
 print(Solution().search(root,7)==root.right.left)
 print(Solution().search(root,10)==root.right.right)
-
-
 ```
 
     True
     True
     
 
-Next:Delete
-
-
-```python
-
-```
+修改search
 
 
 ```python
@@ -477,253 +471,214 @@ class TreeNode(object):
         self.right = None
 
 class Solution(object):
+    def __init__(self):
+        self.root = None
+        
     def insert(self, root, val):
         if root == None:
             root = TreeNode(val)
         elif val <= root.val:
-            root.left = self.insert(root.left, val)
+            if root.val == None:
+                root.left= TreeNode(val)
+            else:
+                self.insert(root.left, val)
+        elif val >root.val:
+            if root.val == None:
+                root.right= TreeNode(val)
+            else:
+                self.insert(root.right, val)
+        else:
+            return None
+            
+    def insert_pre(self, root, val):
+        if root == None:
+            root = TreeNode(val)
+        elif val <= root.val:
+            if root.val == None:
+                root.left= TreeNode(val)
+            else:
+                root.left = self.insert_pre(root.left, val)
         elif val > root.val:
-            root.right = self.insert(root.right, val)
+            if root.val == None:
+                root.right= TreeNode(val)
+            else:
+                root.right = self.insert_pre(root.right, val)
         return root
-    
-   
-    def preorder(self,root):
-        if root is None:return []
-        result=[root.val]
-        resultl=self.preorder(root.left)
-        resultr=self.preorder(root.right)
-        return result+resultl+resultr
-    
-    def preorder2(self,root):
-        if root is None:return []
-        result=[]
-        result.append(root.val)
-        result.append(self.preorder(root.left))
-        result.append(self.preorder(root.right))
-        return result
-    
-    def preorder1(self,root,arr):
-        if not root:return []
-        arr.append(root.val)
-        self.preorder1(root.left)        
-        self.preorder1(root.right)
 
+    def preorder(self, root):
+        if root == None:
+            return []
+        return [root.val] + self.preorder(root.left) + self.preorder(root.right)
     
     def search(self, root, target):
         if root == None:
             return False
-        if root.val == target:
-            return root
-        if target < root.val:
-            return self.search(root.left,target)
-        if target > root.val:
-            return self.search(root.right,target)
-        
-    def findMin(self, root):
-        if root.left:
-            return self.findMin(root.left)
         else:
-            return root
-        
-    def findMax(self, root):
-        if root.right:
-            return self.findMax(root.right)
-        else:
-            return root
-        
-    def delete(self, root, target):
-        if root == None:
-            return 
-        if target < root.val:
-            root.left = self.delete(root.left, target)
-        elif target > root.val:
-            root.right = self.delete(root.right, target)
-        else:
-            if root.left and root.right:
-                temp = self.findMin(root.right)
-                root.val = temp.val
-                root.right = self.delete(root.right, temp.val)
-            elif root.right == None and root.left == None:
-                root = None
-            elif root.right == None:
-                root = root.left
-            elif root.left == None:
-                root = root.right
-        return root
-    
-    def modify(self, root, target, new_val):
-        if root:
             if root.val == target:
-                root.val = new_val
-            elif target < root.val:
-                self.modify(root.left, target,new_val)
+                return root
+            elif target <= root.val:
+                return self.search(root.left,target)
             elif target > root.val:
-                self.modify(root.right, target,new_val)
-        return root
+                return self.search(root.right,target)
     
-    def modify2(self, root, target, new_val):
-        if root:
-            if root.val == target:
-                root.val = new_val       
-        if root.left:
-            self.modify2(root.left, target, new_val)
-        
-        if root.right:
-            self.modify2(root.right, target, new_val)
-            
-        return root
-    
-    def modify3(self, root, target, new_val):
-        if root:
-            if root.val == target:
-                root.val = new_val
-            if target < root.val:
-                root.left = self.modify3(root.left, target, new_val)
-            if target > root.val:
-                root.right = self.modify3(root.right, target, new_val)
-        return root
-    
-    
-    
-    
-        
-    
+```
 
-bst = Solution()
+
+```python
 root = TreeNode(5)
-bstest1 = bst.insert(root, -5)
-bstest1 = bst.insert(root, 3)
-bstest1 = bst.insert(root, 3)
-bstest1 = bst.insert(root, 8)
-bstest1 = bst.insert(root, 7)
-bstest1 = bst.insert(root, 10)
-bstest1 = bst.insert(root, 6)
-
-print(Solution().search(root,-5)==root.left)
-print(Solution().search(root,3)==root.left.right)
-print(Solution().search(root,3)==root.left.right.left)
+root.left = TreeNode(3)  
+root.left.left = TreeNode(3) 
+root.left.left.left = TreeNode(-5) 
+root.right = TreeNode(8)
+root.right.left = TreeNode(7)
+root.right.left.left = TreeNode(6)
+root.right.right = TreeNode(10)
 print(Solution().search(root,7)==root.right.left)
-print(Solution().search(root,6)==root.right.left.left)
 print(Solution().search(root,10)==root.right.right)
-a=Solution().preorder(bstest1)
-print(a)
-print("-----------------")
-print("insert result")
-print(Solution().insert(root,5)==root)
-print(Solution().insert(root,7)==root)
-print(Solution().insert(root,-5)==root)
-a=Solution().preorder(bstest1)
-print(a)
-print("-----------------")
-print("search result")
-print(Solution().search(root,3)==root.left.right)
-print(Solution().search(root,5)==root)
-print(Solution().search(root,8)==root.right)
-print(Solution().search(root,-5)==root.left)
-print(Solution().search(root,7)==root.right.left.left)
-print(Solution().search(root,10)==root.right.right)
-print(Solution().search(root,6)==root.right.left.left)
-print(Solution().search(root,7)==root.right.left.left.right)
-
-
-e=Solution().preorder2(bstest1)
-print(e)
-print("-----------------")
-print("delete result")
-bstest2 = bst.delete(root, 6)
-bstest2 = bst.delete(root, -5)
-b=Solution().preorder2(bstest2)
-print(Solution().delete(root,6)==root)
-print(Solution().delete(root,-5)==root)
-print(b)
-print("-----------------")
-print("modify result")
-print(Solution().modify(root,3,10)==root)
-print(Solution().modify(root,10,-2)==root)
-print(Solution().modify(root,8,9)==root)
-
-bstest3 = bst.modify(root,3,10)
-bstest3 = bst.modify(root,10,-2)
-bstest3 = bst.modify(root,8,9)
-c=Solution().preorder2(bstest3)
-print(c)
-print("-----------------")
-print("modify2 result")
-print(Solution().modify2(root,3,10)==root)
-print(Solution().modify2(root,10,-2)==root)
-print(Solution().modify2(root,8,9)==root)
-
-bstest4 = bst.modify2(root,3,10)
-bstest4 = bst.modify2(root,10,-2)
-bstest4 = bst.modify2(root,8,9)
-d=Solution().preorder2(bstest4)
-print(d)
-print("-----------------")
-print("modify3 result")
-print(Solution().modify3(root,3,10)==root)
-print(Solution().modify3(root,10,-2)==root)
-print(Solution().modify3(root,8,9)==root)
-
-bstest5 = bst.modify3(root,3,10)
-bstest5 = bst.modify3(root,10,-2)
-bstest5 = bst.modify3(root,8,9)
-f=Solution().preorder2(bstest5)
-print(f)
-
-
-
-
-
 ```
 
     True
     True
-    False
-    True
-    True
-    True
-    [5, -5, 3, 3, 8, 7, 6, 10]
-    -----------------
-    insert result
-    True
-    True
-    True
-    [5, -5, -5, 3, 3, 5, 8, 7, 6, 7, 10]
-    -----------------
-    search result
-    True
-    True
-    True
-    True
-    False
-    True
-    True
-    False
-    [5, [-5, -5, 3, 3, 5], [8, 7, 6, 7, 10]]
-    -----------------
-    delete result
-    True
-    True
-    [5, [3, -5, 5, 3], [8, 7, 7, 10]]
-    -----------------
-    modify result
-    True
-    True
-    True
-    [5, [10, 5, 3], [9, 7, 7, -2]]
-    -----------------
-    modify2 result
-    True
-    True
-    True
-    [5, [-2, 5, -2], [9, 7, 7, -2]]
-    -----------------
-    modify3 result
-    True
-    True
-    True
-    [5, [-2, 5, -2], [9, 7, 7, -2]]
     
+
+search done!Next:Delete
+
+* 想法:
+    1. 如果节点是一片树叶，那么可以立即被删除
+    2. 如果节点只有一个儿子，则将此节点parent的指针指向此节点的儿子，然后删除
+    3. 如果节点有两个儿子，则将其右子树的最小数据代替此节点的数据，并将其右子树的最小数据
+* 參考:
+```python
+def delete(self,x):
+    if self.find(x):
+        if x<self.key:
+            self.left=self.left.delete(x)
+            return self
+        elif x>self.key:
+            self.right=self.right.delete(x)
+            return self
+        elif self.left and self.right:
+            key=self.right.findMin().key
+            self.key=key
+            self.right=self.right.delete(key)
+            return self
+        else:
+            if self.left:
+                return self.left
+            else:
+                return self.right
+    else:
+        return self
+```
+參考網站:https://www.cnblogs.com/linxiyue/p/3624597.html
+
+
+```python
+class TreeNode(object):
+    def __init__(self, x):
+        self.val = x
+        self.left = None
+        self.right = None
+
+class Solution(object):
+    def __init__(self):
+        self.root = None
+        
+    def insert(self, root, val):
+        if root == None:
+            root = TreeNode(val)
+        elif val <= root.val:
+            if root.val == None:
+                root.left= TreeNode(val)
+            else:
+                self.insert(root.left, val)
+        elif val >root.val:
+            if root.val == None:
+                root.right= TreeNode(val)
+            else:
+                self.insert(root.right, val)
+        else:
+            return None
+            
+    def insert_pre(self, root, val):
+        if root == None:
+            root = TreeNode(val)
+        elif val <= root.val:
+            if root.val == None:
+                root.left= TreeNode(val)
+            else:
+                root.left = self.insert_pre(root.left, val)
+        elif val > root.val:
+            if root.val == None:
+                root.right= TreeNode(val)
+            else:
+                root.right = self.insert_pre(root.right, val)
+        return root
+
+    def preorder(self, root):
+        if root == None:
+            return []
+        return [root.val] + self.preorder(root.left) + self.preorder(root.right)
+    
+    def search(self, root, target):
+        if root == None:
+            return False
+        else:
+            if root.val == target:
+                return root
+            elif target <= root.val:
+                return self.search(root.left,target)
+            elif target > root.val:
+                return self.search(root.right,target)
+    
+        
+    def FM(self, root):
+        if root.left:
+            return self.FM(root.left)
+        else:
+            return root
+    
+    def delete(self, root, target):
+        if root == None:
+            return None
+    
+        elif root.val> target:
+            root.left = self.delete(root.left, target)
+            
+        elif root.val< target:
+            root.right = self.delete(root.right, target)
+            
+        return root
+    
+    def modify(self, root, target, new_val):
+        if root == None:
+            return 
+        else:
+            if root.val == target:
+                root.val = new_val
+                
+            if root.left:
+                self.modify(root.left, target, new_val)
+        
+            if root.right:
+                self.modify(root.right, target, new_val)
+            
+        return root
+    
+
+```
+
+
+```python
+bstest2 = bst.delete(root, 7)
+b=Solution().preorder(bstest2)
+print(Solution().delete(root,7)==root)
+```
+
+    True
+    
+
+中間跳過一萬字 加速中......
 
 
 ```python
@@ -753,12 +708,10 @@ class Solution(object):
         return root
     
    
-    def preorder(self,root):
-        if root is None:return []
-        result=[root.val]
-        resultl=self.preorder(root.left)
-        resultr=self.preorder(root.right)
-        return result+resultl+resultr
+    def preorder(self, root):
+        if root == None:
+            return []
+        return [root.val] + self.preorder(root.left) + self.preorder(root.right)
     
     def search(self, root, target):
         if root == None:
@@ -770,45 +723,39 @@ class Solution(object):
                 return self.search(root.left,target)
             elif target > root.val:
                 return self.search(root.right,target)
+
         
-    def findMin(self, root):
+    def FM(self, root):
         if root.left:
-            return self.findMin(root.left)
+            return self.FM(root.left)
         else:
             return root
-        
-    def findMax(self, root):
-        if root.right:
-            return self.findMax(root.right)
-        else:
-            return root
-        
+    
     def delete(self, root, target):
         if root == None:
             return None
-        elif target < root.val:
-            root.left = self.delete(root.left, target)
-        elif target > root.val:
-            root.right = self.delete(root.right, target)
-        else:
+        
+        elif target == root.val:
             if root.left and root.right:
-                temp = self.findMin(root.right)
+                temp = self.FM(root.right)
                 root.val = temp.val
                 root.right = self.delete(root.right, temp.val)
-            elif root.right == None and root.left == None:
-                root = None
-            elif root.right == None:
-                root = root.left
-            elif root.left == None:
-                root = root.right
+        
             else:
-                return None
+                return root.val
+        
+        elif root.val> target:
+             self.delete(root.left, target)
+            
+        elif root.val< target:
+            self.delete(root.right, target)
+            
         return root
     
     
     def modify(self, root, target, new_val):
         if root == None:
-            return False
+            return 
         else:
             if root.val == target:
                 root.val = new_val
@@ -835,7 +782,6 @@ bstest1 = bst.insert(root, 6)
 
 print(Solution().search(root,-5)==root.left)
 print(Solution().search(root,3)==root.left.right)
-print(Solution().search(root,3)==root.left.right.left)
 print(Solution().search(root,7)==root.right.left)
 print(Solution().search(root,6)==root.right.left.left)
 print(Solution().search(root,10)==root.right.right)
@@ -854,19 +800,17 @@ print(Solution().search(root,3)==root.left.right)
 print(Solution().search(root,5)==root)
 print(Solution().search(root,8)==root.right)
 print(Solution().search(root,-5)==root.left)
-print(Solution().search(root,7)==root.right.left.left)
 print(Solution().search(root,10)==root.right.right)
 print(Solution().search(root,6)==root.right.left.left)
-print(Solution().search(root,7)==root.right.left.left.right)
 
 
-e=Solution().preorder2(bstest1)
+e=Solution().preorder(bstest1)
 print(e)
 print("-----------------")
 print("delete result")
 bstest2 = bst.delete(root, 6)
 bstest2 = bst.delete(root, -5)
-b=Solution().preorder2(bstest2)
+b=Solution().preorder(bstest2)
 print(Solution().delete(root,6)==root)
 print(Solution().delete(root,-5)==root)
 print(b)
@@ -877,21 +821,13 @@ print("modify result")
 #print(Solution().modify(root,8,9)==root)
 
 bstest3 = bst.modify(root,8,11)
-c1=Solution().preorder2(bstest3)
+c1=Solution().preorder(bstest3)
 print(c1)
-print(Solution().search(root,11)==root.right)
-print(Solution().search(root,10)==root.right.left.right)
-
-
-
 bstest4 = bst.modify(root,10,-2)
-c2=Solution().preorder2(bstest4)
+c2=Solution().preorder(bstest4)
 print(c2)
-
-bstest5 = bst.modify(root,8,9)
-
-
-c3=Solution().preorder2(bstest5)
+bstest5 = bst.modify(root,-2,9)
+c3=Solution().preorder(bstest5)
 print(c3)
 print("-----------------")
 
@@ -904,7 +840,6 @@ print("-----------------")
 
     True
     True
-    False
     True
     True
     True
@@ -921,25 +856,171 @@ print("-----------------")
     True
     True
     True
-    False
     True
     True
-    False
-    [5, [-5, -5, 3, 3, 5], [8, 7, 6, 7, 10]]
+    [5, -5, -5, 3, 3, 5, 8, 7, 6, 7, 10]
     -----------------
     delete result
-    True
-    True
-    [5, [3, -5, 5, 3], [8, 7, 7, 10]]
-    -----------------
-    modify result
-    [5, [3, 5, 3], [11, 7, 7, 10]]
-    True
-    False
-    [5, [3, 5, 3], [11, 7, 7, -2]]
-    [5, [3, 5, 3], [11, 7, 7, -2]]
-    -----------------
     
+
+
+    ---------------------------------------------------------------------------
+
+    AttributeError                            Traceback (most recent call last)
+
+    <ipython-input-95-4b864695ba05> in <module>
+        127 bstest2 = bst.delete(root, 6)
+        128 bstest2 = bst.delete(root, -5)
+    --> 129 b=Solution().preorder(bstest2)
+        130 print(Solution().delete(root,6)==root)
+        131 print(Solution().delete(root,-5)==root)
+    
+
+    <ipython-input-95-4b864695ba05> in preorder(self, root)
+         28         if root == None:
+         29             return []
+    ---> 30         return [root.val] + self.preorder(root.left) + self.preorder(root.right)
+         31 
+         32     def search(self, root, target):
+    
+
+    <ipython-input-95-4b864695ba05> in preorder(self, root)
+         28         if root == None:
+         29             return []
+    ---> 30         return [root.val] + self.preorder(root.left) + self.preorder(root.right)
+         31 
+         32     def search(self, root, target):
+    
+
+    <ipython-input-95-4b864695ba05> in preorder(self, root)
+         28         if root == None:
+         29             return []
+    ---> 30         return [root.val] + self.preorder(root.left) + self.preorder(root.right)
+         31 
+         32     def search(self, root, target):
+    
+
+    <ipython-input-95-4b864695ba05> in preorder(self, root)
+         28         if root == None:
+         29             return []
+    ---> 30         return [root.val] + self.preorder(root.left) + self.preorder(root.right)
+         31 
+         32     def search(self, root, target):
+    
+
+    AttributeError: 'int' object has no attribute 'val'
+
+
+中間跳過2萬字 加速中......
+
+FInal code:
+```python
+class TreeNode(object):
+    def __init__(self, x):
+        self.val = x
+        self.left = None
+        self.right = None
+
+class Solution(object):
+    def __init__(self):
+        self.root = None
+        
+    def insert(self, root, val):
+        if root == None:
+            root = TreeNode(val)
+        elif val <= root.val:
+            if root.val == None:
+                root.left= TreeNode(val)
+            else:
+                self.insert(root.left, val)
+        elif val >root.val:
+            if root.val == None:
+                root.right= TreeNode(val)
+            else:
+                self.insert(root.right, val)
+        else:
+            return None
+            
+    def insert_pre(self, root, val):
+        if root == None:
+            root = TreeNode(val)
+        elif val <= root.val:
+            if root.val == None:
+                root.left= TreeNode(val)
+            else:
+                root.left = self.insert_pre(root.left, val)
+        elif val > root.val:
+            if root.val == None:
+                root.right= TreeNode(val)
+            else:
+                root.right = self.insert_pre(root.right, val)
+        return root
+
+    def preorder(self, root):
+        if root == None:
+            return []
+        return [root.val] + self.preorder(root.left) + self.preorder(root.right)
+    
+    def search(self, root, target):
+        if root == None:
+            return False
+        else:
+            if root.val == target:
+                return root
+            elif target <= root.val:
+                return self.search(root.left,target)
+            elif target > root.val:
+                return self.search(root.right,target)
+    
+        
+    def FM(self, root):
+        if root.left:
+            return self.FM(root.left)
+        else:
+            return root
+    
+    def delete(self, root, target):
+        if root == None:
+            return None
+        
+        elif target == root.val:
+            if root.left and root.right:
+                temp = self.FM(root.right)
+                root.val = temp.val
+                root.right = self.delete(root.right, temp.val)
+            elif root.right == None and root.left == None:
+                root = None
+            elif root.right == None:
+                root = root.left
+            elif root.left == None:
+                root = root.right
+            else:
+                return None
+        
+        elif root.val> target:
+            root.left = self.delete(root.left, target)
+            
+        elif root.val< target:
+            root.right = self.delete(root.right, target)
+            
+        return root
+    
+    def modify(self, root, target, new_val):
+        if root == None:
+            return 
+        else:
+            if root.val == target:
+                root.val = new_val
+                
+            if root.left:
+                self.modify(root.left, target, new_val)
+        
+            if root.right:
+                self.modify(root.right, target, new_val)
+            
+        return root
+    
+```
 
 ## 參考資料
 
@@ -953,108 +1034,6 @@ print("-----------------")
 >* https://blog.csdn.net/u010089444/article/details/70854510?utm_source=itdadao&utm_medium=referral
 >* https://zhuanlan.zhihu.com/p/23334059
 >* https://www.twblogs.net/a/5d4d09dcbd9eee541c30e5c9
->* https://emn178.pixnet.net/blog/post/94574434
+>* https://www.cnblogs.com/lliuye/p/9118591.html
 
 
-```python
-class TreeNode(object):
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
-
-class Solution(object):
-    def __init__(self):
-        self.root = None
-        
-    def insert(self, root, val):
-        if root == None:
-            root = TreeNode(val)
-        elif val <= root.val:
-            if root.val == None:
-                root.left= TreeNode(val)
-            else:
-                root.left = self.insert(root.left, val)
-        elif val > root.val:
-            if root.val == None:
-                root.right= TreeNode(val)
-            else:
-                root.right = self.insert(root.right, val)
-        return root
-    
-   
-    def preorder(self,root):
-        if root is None:return []
-        result=[root.val]
-        resultl=self.preorder(root.left)
-        resultr=self.preorder(root.right)
-        return result+resultl+resultr
-    
-    def search(self, root, target):
-        if root == None:
-            return False
-        else:
-            if root.val == target:
-                return root
-            elif target <= root.val:
-                return self.search(root.left,target)
-            elif target > root.val:
-                return self.search(root.right,target)
-        
-    def findMin(self, root):
-        if root.left:
-            return self.findMin(root.left)
-        else:
-            return root
-        
-    def findMax(self, root):
-        if root.right:
-            return self.findMax(root.right)
-        else:
-            return root
-        
-    def delete(self, root, target):
-        if root == None:
-            return None
-        elif target < root.val:
-            root.left = self.delete(root.left, target)
-        elif target > root.val:
-            root.right = self.delete(root.right, target)
-        else:
-            if root.left and root.right:
-                temp = self.findMin(root.right)
-                root.val = temp.val
-                root.right = self.delete(root.right, temp.val)
-            elif root.right == None and root.left == None:
-                root = None
-            elif root.right == None:
-                root = root.left
-            elif root.left == None:
-                root = root.right
-            else:
-                return None
-        return root
-    
-    
-    def modify(self, root, target, new_val):
-        if root == None:
-            return False
-        else:
-            if root.val == target:
-                root.val = new_val
-                
-            if root.left:
-                self.modify(root.left, target, new_val)
-        
-            if root.right:
-                self.modify(root.right, target, new_val)
-            
-        return root
-    
-
-```
-
-
-```python
-
-```
