@@ -12,6 +12,8 @@
 # Homework
 * [HW1](https://github.com/ykz0608/DSA/tree/master/HW1)
 * [HW2](https://github.com/ykz0608/DSA/tree/master/HW2)
+* [HW3](https://github.com/ykz0608/DSA/tree/master/HW3)
+
 
 # Learning_Note
 * Week 1 : [學習資源](https://github.com/ykz0608/DSA/tree/master/week%201)
