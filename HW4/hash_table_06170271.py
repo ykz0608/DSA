@@ -18,13 +18,10 @@ class MyHashSet:
         node = self.data[rem]
         if node:
             if node.val !=input_num:
-                node.next=ListNode(input_num)
-                
+                node.next=ListNode(input_num)   
             elif node.next:
                 if node.val != input_num:
                     node = node.next
-                else:
-                    return
             else:
                 return
         else:
