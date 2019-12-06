@@ -320,13 +320,15 @@ class MyHashSet:
         rem = input_num%self.capacity
         node = self.data[rem]
         if node:
-            if node.next:
+            
+            if node.val !=input_num:
+                node.next=ListNode(input_num)
+                
+            elif node.next:
                 if node.val != input_num:
                     node = node.next
                 else:
                     return
-            elif node.val !=input_num:
-                node.next=ListNode(input_num)
             else:
                 return
         else:
@@ -405,13 +407,15 @@ class MyHashSet:
         rem = input_num%self.capacity
         node = self.data[rem]
         if node:
-            if node.next:
+            
+            if node.val !=input_num:
+                node.next=ListNode(input_num)
+                
+            elif node.next:
                 if node.val != input_num:
                     node = node.next
                 else:
                     return
-            elif node.val !=input_num:
-                node.next=ListNode(input_num)
             else:
                 return
         else:
@@ -505,13 +509,15 @@ class MyHashSet:
         rem = input_num%self.capacity
         node = self.data[rem]
         if node:
-            if node.next:
+            
+            if node.val !=input_num:
+                node.next=ListNode(input_num)
+                
+            elif node.next:
                 if node.val != input_num:
                     node = node.next
                 else:
                     return
-            elif node.val !=input_num:
-                node.next=ListNode(input_num)
             else:
                 return
         else:
@@ -734,13 +740,15 @@ class MyHashSet:
         rem = input_num%self.capacity
         node = self.data[rem]
         if node:
-            if node.next:
+            
+            if node.val !=input_num:
+                node.next=ListNode(input_num)
+                
+            elif node.next:
                 if node.val != input_num:
                     node = node.next
                 else:
                     return
-            elif node.val !=input_num:
-                node.next=ListNode(input_num)
             else:
                 return
         else:
@@ -864,13 +872,14 @@ class MyHashSet:
         rem = input_num%self.capacity
         node = self.data[rem]
         if node:
-            if node.next:
+            if node.val !=input_num:
+                node.next=ListNode(input_num)
+                
+            elif node.next:
                 if node.val != input_num:
                     node = node.next
                 else:
                     return
-            elif node.val !=input_num:
-                node.next=ListNode(input_num)
             else:
                 return
         else:
@@ -906,7 +915,6 @@ class MyHashSet:
         rem = input_num%self.capacity
         node = self.data[rem]
 
-        
         if node == None:
             return False
         else:
