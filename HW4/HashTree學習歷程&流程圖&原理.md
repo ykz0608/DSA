@@ -68,7 +68,7 @@ class MyHashSet:
 ```
 
 ## 流程圖
-* [](https://github.com/ykz0608/DSA/blob/master/image/hash%20table.svg)
+![](https://github.com/ykz0608/DSA/blob/master/image/hash%20table.svg)
 
 ## 嘗試寫code
 
