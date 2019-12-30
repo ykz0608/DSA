@@ -5,7 +5,7 @@
 
 # Menu :
 * [Homework](#Homework)
-* [Course Information](#Course Information)
+* [Course_Information](#Course_Information)
 * [About Me](#About_Me)
 
  
