@@ -4,16 +4,13 @@
 >* 崇尚簡約
 
 
-# Menu :
+## :ledger:Menu 
 * [Homework](#Homework)
 * [Course Information](#Course_Information)
 * [學習資源](#學習資源)
 * [About Me](#About_Me)
 
-
-
- 
-# Homework
+## :book: Homework
 * [HW1](https://github.com/ykz0608/DSA/tree/master/HW1)
 * [HW2](https://github.com/ykz0608/DSA/tree/master/HW2)
 * [HW3](https://github.com/ykz0608/DSA/tree/master/HW3)
@@ -22,7 +19,7 @@
 * [HW6](https://github.com/ykz0608/DSA/tree/master/HW6)
 
 
-# Course_Information
+## :bookmark:Course_Information
 * [linked list](https://docs.google.com/presentation/d/e/2PACX-1vTB218-EdUZ5jpNz6Uv4TOZQc37Y281v128_aRcWC6EhkTQs5bS8fh7yysmcuzb9R2QPN6_PDshFWL_/pub?start=false&loop=false&delayms=3000&slide=id.p)
 * [stack&queue](https://docs.google.com/presentation/d/e/2PACX-1vQ1hb79im0vqpApCttGnXAFRT8SqH9HQP0b_oyVRCV8SVyiHLkHJjidYGAfxkvq468QMumFIDdTeiB-/pub?start=false&loop=false&delayms=3000&slide=id.p)
 * [set](https://docs.google.com/presentation/d/e/2PACX-1vT6BvB7aI9oLgyum8tdIgGVr8kabqtwo8KZV3ayzKKQqGkpAnvrjT3JabWu-Hms9kUaDILyCU8-Qqhl/pub?start=false&loop=false&delayms=3000&slide=id.p)
@@ -43,7 +40,9 @@
 * [shortest path](https://docs.google.com/presentation/d/e/2PACX-1vTgHO5AkHJS6iN6bnnBMMdHv6E4rabnrC0KwyTRfjad8Ab3IQjbnGvZuQOjDC9t7nKqeroiwcuasJrI/pub?start=false&loop=false&delayms=3000&slide=id.g7b9afdb0e7_0_0)
 * [Overview](https://docs.google.com/presentation/d/e/2PACX-1vSkbZghFr5Y3VG3b-BKCZiLNHyhcMIxFmNDHn-tgWQqH4vaGjulKASn_ex_LLDJwxPIRCacGQnBRYrI/pub?start=false&loop=false&delayms=3000&slide=id.p)
  
-# 學習資源
+## :notebook:Learning_Note
+ 
+## :books:學習資源
 * 在線練習
   * [codesigna](https://codesignal.com)
   * [leetcode](https://leetcode.com)
@@ -61,7 +60,7 @@
   * [draw.io](https://www.draw.io/)
 
  
-# About_Me
+## :sheep:About_Me
 - **姓名**：楊嘉政
 - **學校**：Soochow University（東吳大學）
 - **主修學系**：Big Data Management（巨量資料管理）
