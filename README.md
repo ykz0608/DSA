@@ -7,7 +7,9 @@
 # Menu :
 * [Homework](#Homework)
 * [Course Information](#Course_Information)
+* [學習資源](#學習資源)
 * [About Me](#About_Me)
+
 
 
  
