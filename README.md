@@ -38,6 +38,22 @@
 * [shortest path](https://docs.google.com/presentation/d/e/2PACX-1vTgHO5AkHJS6iN6bnnBMMdHv6E4rabnrC0KwyTRfjad8Ab3IQjbnGvZuQOjDC9t7nKqeroiwcuasJrI/pub?start=false&loop=false&delayms=3000&slide=id.g7b9afdb0e7_0_0)
 * [Overview](https://docs.google.com/presentation/d/e/2PACX-1vSkbZghFr5Y3VG3b-BKCZiLNHyhcMIxFmNDHn-tgWQqH4vaGjulKASn_ex_LLDJwxPIRCacGQnBRYrI/pub?start=false&loop=false&delayms=3000&slide=id.p)
  
+# 學習資源
+* 在線練習
+  * [codesigna](https://codesignal.com)
+  * [leetcode](https://leetcode.com)
+
+* GitHub
+  * [GitHub秘籍](https://snowdream86.gitbooks.io/github-cheat-sheet/content/zh/index.html#%E4%BB%BB%E5%8A%A1%E5%88%97%E8%A1%A8)
+  * [Markdown 語法說明](https://github.com/othree/markdown-syntax-zhtw)
+
+* Python
+  * [learnxinyminutes-zh-cn](https://github.com/haiiiiiyun/learnxinyminutes-zh-cn/blob/master/book/part1/python3.md)
+  * [Python 3.9.0a0 文档](https://www.osgeo.cn/cpython/)
+  * [Python 教學](https://docs.python.org/zh-tw/3/tutorial/index.html)
+
+* 流程圖
+  * [draw.io](https://www.draw.io/)
 
  
 # About_Me
