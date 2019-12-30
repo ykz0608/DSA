@@ -5,7 +5,7 @@
 
 # Menu :
 * [Homework](#Homework)
-* [Course_Information](#Course Information)
+* [Course Information](#Course_Information)
 * [About Me](#About_Me)
 
  
@@ -17,7 +17,7 @@
 * [HW5](https://github.com/ykz0608/DSA/tree/master/HW5)
 * [HW6](https://github.com/ykz0608/DSA/tree/master/HW6)
 
-# Course Information
+# Course_Information
 * [linked list](https://docs.google.com/presentation/d/e/2PACX-1vTB218-EdUZ5jpNz6Uv4TOZQc37Y281v128_aRcWC6EhkTQs5bS8fh7yysmcuzb9R2QPN6_PDshFWL_/pub?start=false&loop=false&delayms=3000&slide=id.p)
 * [stack&queue](https://docs.google.com/presentation/d/e/2PACX-1vQ1hb79im0vqpApCttGnXAFRT8SqH9HQP0b_oyVRCV8SVyiHLkHJjidYGAfxkvq468QMumFIDdTeiB-/pub?start=false&loop=false&delayms=3000&slide=id.p)
 * [set](https://docs.google.com/presentation/d/e/2PACX-1vT6BvB7aI9oLgyum8tdIgGVr8kabqtwo8KZV3ayzKKQqGkpAnvrjT3JabWu-Hms9kUaDILyCU8-Qqhl/pub?start=false&loop=false&delayms=3000&slide=id.p)
