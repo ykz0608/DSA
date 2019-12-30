@@ -19,16 +19,17 @@
 
 
 # Learning_Note
-* Week 1 : [學習資源](https://github.com/ykz0608/DSA/tree/master/week%201)
-* Week 2 : [Linked List](https://github.com/ykz0608/DSA/tree/master/week%202)
-* Week 3 : [Stack & Queue](https://github.com/ykz0608/DSA/tree/master/week%203)
-* Week 4:  [Set](https://github.com/ykz0608/DSA/tree/master/week%204)
-* Week 5 : [InsertionSort、QuickSort](https://github.com/ykz0608/DSA/tree/master/week%205)
-* Week 6 : [Heap Sort](https://github.com/ykz0608/DSA/tree/master/week%206)
-* Week 7 : [Merge Sort](https://github.com/ykz0608/DSA/tree/master/week%207)
-* Week 8 : [Binary Tree](https://github.com/ykz0608/DSA/tree/master/week%208)
-* Week 9 : [Hash Table](https://github.com/ykz0608/DSA/tree/master/week%209)
-* Week 10: [Breath-First Serach Queue/Depyh-First Search Stack](https://github.com/ykz0608/DSA/tree/master/week%2010)
+* Note 1 : [學習資源](https://github.com/ykz0608/DSA/tree/master/Note%201)
+* Note 2 : [Linked List](https://github.com/ykz0608/DSA/tree/master/Note%202)
+* Note 3 : [Stack & Queue](https://github.com/ykz0608/DSA/tree/master/Note%203)
+* Note 4 :  [Set](https://github.com/ykz0608/DSA/tree/master/Note%204)
+* Note 5 : [InsertionSort、QuickSort](https://github.com/ykz0608/DSA/tree/master/Note%205)
+* Note 6 : [Heap Sort](https://github.com/ykz0608/DSA/tree/master/Note%206)
+* Note 7 : [Merge Sort](https://github.com/ykz0608/DSA/tree/master/Note%207)
+* Note 8 : [Binary Tree](https://github.com/ykz0608/DSA/tree/master/Note%208)
+* Note 9 : [Hash Table](https://github.com/ykz0608/DSA/tree/master/Note%209)
+* Note 10: [Breath-First Serach Queue/Depyh-First Search Stack](https://github.com/ykz0608/DSA/tree/master/Note%2010)
+* Note 11: [Dijkstra/Kruskal](https://github.com/ykz0608/DSA/tree/master/Note%2011)
   
  
 # About_Me
