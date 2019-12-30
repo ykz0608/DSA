@@ -2,13 +2,13 @@
 >* HELLO,I am ykz Y_Y
 >* 巨資三B 楊嘉政 06170271
 >* 崇尚簡約
----
+
 
 # Menu :
 * [Homework](#Homework)
 * [Course Information](#Course_Information)
 * [About Me](#About_Me)
----
+
 
  
 # Homework
@@ -18,7 +18,7 @@
 * [HW4](https://github.com/ykz0608/DSA/tree/master/HW4)
 * [HW5](https://github.com/ykz0608/DSA/tree/master/HW5)
 * [HW6](https://github.com/ykz0608/DSA/tree/master/HW6)
----
+
 
 # Course_Information
 * [linked list](https://docs.google.com/presentation/d/e/2PACX-1vTB218-EdUZ5jpNz6Uv4TOZQc37Y281v128_aRcWC6EhkTQs5bS8fh7yysmcuzb9R2QPN6_PDshFWL_/pub?start=false&loop=false&delayms=3000&slide=id.p)
@@ -37,7 +37,7 @@
 * [minimum spanning tree](https://docs.google.com/presentation/d/e/2PACX-1vTorNDEyhYA4ZAt5jEqOmFs2cQiUAYvkTp-R0DOn9B3c1MuUecV-a1wNakFIrJxA6AoUFGzbl3OQBIJ/pub?start=false&loop=false&delayms=3000&slide=id.g5fc27284d4_0_908)
 * [shortest path](https://docs.google.com/presentation/d/e/2PACX-1vTgHO5AkHJS6iN6bnnBMMdHv6E4rabnrC0KwyTRfjad8Ab3IQjbnGvZuQOjDC9t7nKqeroiwcuasJrI/pub?start=false&loop=false&delayms=3000&slide=id.g7b9afdb0e7_0_0)
 * [Overview](https://docs.google.com/presentation/d/e/2PACX-1vSkbZghFr5Y3VG3b-BKCZiLNHyhcMIxFmNDHn-tgWQqH4vaGjulKASn_ex_LLDJwxPIRCacGQnBRYrI/pub?start=false&loop=false&delayms=3000&slide=id.p)
- ---
+ 
 
  
 # About_Me
