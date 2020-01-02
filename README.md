@@ -41,25 +41,27 @@
 * [Overview](https://docs.google.com/presentation/d/e/2PACX-1vSkbZghFr5Y3VG3b-BKCZiLNHyhcMIxFmNDHn-tgWQqH4vaGjulKASn_ex_LLDJwxPIRCacGQnBRYrI/pub?start=false&loop=false&delayms=3000&slide=id.p)
  
 ## :notebook:Learning_Note
+* [week1](https://github.com/ykz0608/DSA/tree/master/week1)
+* [week2](https://github.com/ykz0608/DSA/tree/master/week2)
+* [week3](https://github.com/ykz0608/DSA/tree/master/week3)
+* [week4](https://github.com/ykz0608/DSA/tree/master/week4)
+* [week5](https://github.com/ykz0608/DSA/tree/master/week5)
+* [week6](https://github.com/ykz0608/DSA/tree/master/week6)
+* [week7](https://github.com/ykz0608/DSA/tree/master/week7)
+* [week8](https://github.com/ykz0608/DSA/tree/master/week8)
+* [week9](https://github.com/ykz0608/DSA/tree/master/week9)
+* [week10](https://github.com/ykz0608/DSA/tree/master/week10)
+* [week11](https://github.com/ykz0608/DSA/tree/master/week11)
+* [week12](https://github.com/ykz0608/DSA/tree/master/week12)
+* [week13](https://github.com/ykz0608/DSA/tree/master/week13)
+* [week14](https://github.com/ykz0608/DSA/tree/master/week14)
+* [week15](https://github.com/ykz0608/DSA/tree/master/week15)
+* [week16](https://github.com/ykz0608/DSA/tree/master/week16)
+* [week17](https://github.com/ykz0608/DSA/tree/master/week17)
+* [week18](https://github.com/ykz0608/DSA/tree/master/week18)
 
-* [HW1](https://github.com/ykz0608/DSA/tree/master/HW1)
-* [HW1](https://github.com/ykz0608/DSA/tree/master/HW1)
-* [HW1](https://github.com/ykz0608/DSA/tree/master/HW1)
-* [HW1](https://github.com/ykz0608/DSA/tree/master/HW1)
-* [HW1](https://github.com/ykz0608/DSA/tree/master/HW1)
-* [HW1](https://github.com/ykz0608/DSA/tree/master/HW1
 
-* [HW1](https://github.com/ykz0608/DSA/tree/master/HW1)
 
-* [HW1](https://github.com/ykz0608/DSA/tree/master/HW1)
-
-* [HW1](https://github.com/ykz0608/DSA/tree/master/HW1)
-
-* [HW1](https://github.com/ykz0608/DSA/tree/master/HW1)
-
-* [HW1](https://github.com/ykz0608/DSA/tree/master/HW1)
-
-* [HW1](https://github.com/ykz0608/DSA/tree/master/HW1
  
 ## :books:學習資源
 * 在線練習
