@@ -41,6 +41,25 @@
 * [Overview](https://docs.google.com/presentation/d/e/2PACX-1vSkbZghFr5Y3VG3b-BKCZiLNHyhcMIxFmNDHn-tgWQqH4vaGjulKASn_ex_LLDJwxPIRCacGQnBRYrI/pub?start=false&loop=false&delayms=3000&slide=id.p)
  
 ## :notebook:Learning_Note
+
+* [HW1](https://github.com/ykz0608/DSA/tree/master/HW1)
+* [HW1](https://github.com/ykz0608/DSA/tree/master/HW1)
+* [HW1](https://github.com/ykz0608/DSA/tree/master/HW1)
+* [HW1](https://github.com/ykz0608/DSA/tree/master/HW1)
+* [HW1](https://github.com/ykz0608/DSA/tree/master/HW1)
+* [HW1](https://github.com/ykz0608/DSA/tree/master/HW1
+
+* [HW1](https://github.com/ykz0608/DSA/tree/master/HW1)
+
+* [HW1](https://github.com/ykz0608/DSA/tree/master/HW1)
+
+* [HW1](https://github.com/ykz0608/DSA/tree/master/HW1)
+
+* [HW1](https://github.com/ykz0608/DSA/tree/master/HW1)
+
+* [HW1](https://github.com/ykz0608/DSA/tree/master/HW1)
+
+* [HW1](https://github.com/ykz0608/DSA/tree/master/HW1
  
 ## :books:學習資源
 * 在線練習
