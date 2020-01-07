@@ -11,17 +11,13 @@
 </p>
 
 ## :file_folder:Repository檔案結構 
-|文件夾|[Homework](#book-homework)|Summary of the course|[Leetcode]|Codesigna|[CS50]l|Learning resources|About Me|心得
+|文件夾|[Homework](#book-homework)|[Summary of the course](#bookmarksummary-of-the-course)|[Leetcode]|[Codesigna]|[CS50]l|[Learning resources](#bookslearning-resources)|[About Me](#sheepabout-me)|[Review](#love_letterReview)
 |---|---|---|---|---|---|---|---|---|
 |存放內容|各次作業|每週課程的上課內容概述|練習Leetcode|練習Codesigna|CS50的筆記|個人學習的各種資源|個人的自我簡介|本課程的簡單心得
 
 [Leetcode]:https://github.com/ykz0608/DSA/tree/master/Leetcode
+[Codesigna]:https://github.com/ykz0608/DSA/tree/master/Codesignal
 [CS50]:https://github.com/ykz0608/DSA/tree/master/Codesignal
-[]:https://github.com/ykz0608/DSA/tree/master/Codesignal
-
-* [Course Information](#Course_Information)
-* [學習資源](#學習資源)
-* [About Me](#About_Me)
 
 ## :book: Homework
 * [HW1](https://github.com/ykz0608/DSA/tree/master/HW1)
@@ -81,3 +77,5 @@
 - **常用程式語言**：Python、R
 - **Email**: yongkahzin@gmail.com
 - **崇尚簡約**
+
+## :love_letter:Review
