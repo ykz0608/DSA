@@ -11,12 +11,13 @@
 </p>
 
 ## :file_folder:Repository檔案結構 
-|文件夾|[Homework](#book-homework)|[Leetcode]|[CS50]
-|---|---|---|---|
-|存放內容|各次作業|練習|CS50的筆記|
+|文件夾|[Homework](#book-homework)|Summary of the course|[Leetcode]|Codesigna|[CS50]l|Learning resources|About Me|心得
+|---|---|---|---|---|---|---|---|---|
+|存放內容|各次作業|每週課程的上課內容概述|練習Leetcode|練習Codesigna|CS50的筆記|個人學習的各種資源|個人的自我簡介|本課程的簡單心得
 
 [Leetcode]:https://github.com/ykz0608/DSA/tree/master/Leetcode
 [CS50]:https://github.com/ykz0608/DSA/tree/master/Codesignal
+[]:https://github.com/ykz0608/DSA/tree/master/Codesignal
 
 * [Course Information](#Course_Information)
 * [學習資源](#學習資源)
@@ -31,7 +32,7 @@
 * [HW6](https://github.com/ykz0608/DSA/tree/master/HW6)
 
 
-## :bookmark:Course_Information
+## :bookmark:Summary of the course
 * [上課方式與計分規則說明 - Google 簡報](https://docs.google.com/presentation/d/e/2PACX-1vQyAFfgCNbBPBDWV_Xbahc2CtMBr_v-jfffAhaOWw2SntBRd2kJtLZZgdYoRfEZD7flCo4ilfO_msKX/pub?start=false&loop=false&delayms=3000&slide=id.p)
 * [linked list](https://docs.google.com/presentation/d/e/2PACX-1vTB218-EdUZ5jpNz6Uv4TOZQc37Y281v128_aRcWC6EhkTQs5bS8fh7yysmcuzb9R2QPN6_PDshFWL_/pub?start=false&loop=false&delayms=3000&slide=id.p)
 * [stack&queue](https://docs.google.com/presentation/d/e/2PACX-1vQ1hb79im0vqpApCttGnXAFRT8SqH9HQP0b_oyVRCV8SVyiHLkHJjidYGAfxkvq468QMumFIDdTeiB-/pub?start=false&loop=false&delayms=3000&slide=id.p)
@@ -53,9 +54,7 @@
 * [shortest path](https://docs.google.com/presentation/d/e/2PACX-1vTgHO5AkHJS6iN6bnnBMMdHv6E4rabnrC0KwyTRfjad8Ab3IQjbnGvZuQOjDC9t7nKqeroiwcuasJrI/pub?start=false&loop=false&delayms=3000&slide=id.p)
 * [Overview](https://docs.google.com/presentation/d/e/2PACX-1vSkbZghFr5Y3VG3b-BKCZiLNHyhcMIxFmNDHn-tgWQqH4vaGjulKASn_ex_LLDJwxPIRCacGQnBRYrI/pub?start=false&loop=false&delayms=3000&slide=id.p)
  
-## :notebook:Learning_Note
-
-## :books:學習資源
+## :books:Learning resources 
 * 在線練習
   * [codesigna](https://codesignal.com)
   * [leetcode](https://leetcode.com)
@@ -73,7 +72,7 @@
   * [draw.io](https://www.draw.io/)
 
  
-## :sheep:About_Me
+## :sheep:About Me
 - **姓名**：楊嘉政
 - **學號**: 06170271
 - **班級**: 巨資三B 
