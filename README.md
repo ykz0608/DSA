@@ -1,23 +1,3 @@
-<h1 align="left">108 DATA STRUCTURES AND ALGORITHMS</h1>
-<p align="center">
-    <img alt="GitHub stars" src="https://img.shields.io/github/stars/ykz0608/DSA?style=social">
-    <img alt="GitHub watchers" src="https://img.shields.io/github/watchers/ykz0608/DSA?style=social">
-    <img alt="GitHub forks" src="https://img.shields.io/github/forks/ykz0608/DSA?style=social">
-</p>
-
-資料結構與演算法相关领域学习笔记，利用Python完成本課程的作業
-<p align="left">
-    <img src=https://img.shields.io/badge/python-3.7-blue.svg>
-</p>
-
-## :file_folder:Repository檔案結構 
-|文件夾|[Homework](#book-homework)|[Summary of the course](#bookmarksummary-of-the-course)|[Leetcode]|[Codesigna]|[CS50]l|[Learning resources](#bookslearning-resources)|[About Me](#sheepabout-me)|[Review](#love_letterReview)
-|---|---|---|---|---|---|---|---|---|
-|存放內容|各次作業|每週課程的上課內容概述|練習Leetcode|練習Codesigna|CS50的筆記|個人學習的各種資源|個人的自我簡介|本課程的簡單心得
-
-[Leetcode]:https://github.com/ykz0608/DSA/tree/master/Leetcode
-[Codesigna]:https://github.com/ykz0608/DSA/tree/master/Codesignal
-[CS50]:https://github.com/ykz0608/DSA/tree/master/Codesignal
 
 ## :book: Homework
 * [HW1](https://github.com/ykz0608/DSA/tree/master/HW1)
