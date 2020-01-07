@@ -1,11 +1,23 @@
-# 108 DATA STRUCTURES AND ALGORITHMS
->* HELLO,I am ykz Y_Y
->* 巨資三B 楊嘉政 06170271
->* 崇尚簡約
+<h1 align="left">108 DATA STRUCTURES AND ALGORITHMS</h1>
+<p align="center">
+    <img alt="GitHub stars" src="https://img.shields.io/github/stars/ykz0608/DSA?style=social">
+    <img alt="GitHub watchers" src="https://img.shields.io/github/watchers/ykz0608/DSA?style=social">
+    <img alt="GitHub forks" src="https://img.shields.io/github/forks/ykz0608/DSA?style=social">
+</p>
 
+資料結構與演算法相关领域学习笔记，利用Python完成本課程的作業
+<p align="left">
+    <img src=https://img.shields.io/badge/python-3.7-blue.svg>
+</p>
 
-## :ledger:Menu 
-* [Homework](#Homework)
+## :file_folder:Repository檔案結構 
+|文件夾|[Homework](#Homework)|[Leetcode]|[CS50]
+|---|---|---|---|
+|存放內容|各次作業|練習|CS50的筆記|
+
+[Leetcode]:https://github.com/ykz0608/DSA/tree/master/Leetcode
+[CS50]:https://github.com/ykz0608/DSA/tree/master/Codesignal
+
 * [Course Information](#Course_Information)
 * [學習資源](#學習資源)
 * [About Me](#About_Me)
@@ -20,6 +32,7 @@
 
 
 ## :bookmark:Course_Information
+* [上課方式與計分規則說明 - Google 簡報](https://docs.google.com/presentation/d/e/2PACX-1vQyAFfgCNbBPBDWV_Xbahc2CtMBr_v-jfffAhaOWw2SntBRd2kJtLZZgdYoRfEZD7flCo4ilfO_msKX/pub?start=false&loop=false&delayms=3000&slide=id.p)
 * [linked list](https://docs.google.com/presentation/d/e/2PACX-1vTB218-EdUZ5jpNz6Uv4TOZQc37Y281v128_aRcWC6EhkTQs5bS8fh7yysmcuzb9R2QPN6_PDshFWL_/pub?start=false&loop=false&delayms=3000&slide=id.p)
 * [stack&queue](https://docs.google.com/presentation/d/e/2PACX-1vQ1hb79im0vqpApCttGnXAFRT8SqH9HQP0b_oyVRCV8SVyiHLkHJjidYGAfxkvq468QMumFIDdTeiB-/pub?start=false&loop=false&delayms=3000&slide=id.p)
 * [set](https://docs.google.com/presentation/d/e/2PACX-1vT6BvB7aI9oLgyum8tdIgGVr8kabqtwo8KZV3ayzKKQqGkpAnvrjT3JabWu-Hms9kUaDILyCU8-Qqhl/pub?start=false&loop=false&delayms=3000&slide=id.p)
@@ -41,28 +54,7 @@
 * [Overview](https://docs.google.com/presentation/d/e/2PACX-1vSkbZghFr5Y3VG3b-BKCZiLNHyhcMIxFmNDHn-tgWQqH4vaGjulKASn_ex_LLDJwxPIRCacGQnBRYrI/pub?start=false&loop=false&delayms=3000&slide=id.p)
  
 ## :notebook:Learning_Note
-* [week1](https://github.com/ykz0608/DSA/tree/master/week1)
-* [week2](https://github.com/ykz0608/DSA/tree/master/week2)
-* [week3](https://github.com/ykz0608/DSA/tree/master/week3)
-* [week4](https://github.com/ykz0608/DSA/tree/master/week4)
-* [week5](https://github.com/ykz0608/DSA/tree/master/week5)
-* [week6](https://github.com/ykz0608/DSA/tree/master/week6)
-* [week7](https://github.com/ykz0608/DSA/tree/master/week7)
-* [week8](https://github.com/ykz0608/DSA/tree/master/week8)
-* [week9](https://github.com/ykz0608/DSA/tree/master/week9)
-* [week10](https://github.com/ykz0608/DSA/tree/master/week10)
-* [week11](https://github.com/ykz0608/DSA/tree/master/week11)
-* [week12](https://github.com/ykz0608/DSA/tree/master/week12)
-* [week13](https://github.com/ykz0608/DSA/tree/master/week13)
-* [week14](https://github.com/ykz0608/DSA/tree/master/week14)
-* [week15](https://github.com/ykz0608/DSA/tree/master/week15)
-* [week16](https://github.com/ykz0608/DSA/tree/master/week16)
-* [week17](https://github.com/ykz0608/DSA/tree/master/week17)
-* [week18](https://github.com/ykz0608/DSA/tree/master/week18)
 
-
-
- 
 ## :books:學習資源
 * 在線練習
   * [codesigna](https://codesignal.com)
@@ -83,7 +75,10 @@
  
 ## :sheep:About_Me
 - **姓名**：楊嘉政
+- **學號**: 06170271
+- **班級**: 巨資三B 
 - **學校**：Soochow University（東吳大學）
 - **主修學系**：Big Data Management（巨量資料管理）
 - **常用程式語言**：Python、R
 - **Email**: yongkahzin@gmail.com
+- **崇尚簡約**
