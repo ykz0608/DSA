@@ -23,7 +23,7 @@
 ## :pencil2: Homework
 |作業|主題|筆記|程式碼|文件夾|
 |---|---|---|---|---|
-|1|Quicksort|[qsnote(]https://github.com/ykz0608/DSA/blob/master/image/Quick%20sort.svg)|https://github.com/ykz0608/DSA/blob/master/HW1/QuickSort.ipynb|https://github.com/ykz0608/DSA/tree/master/HW1|
+|1|Quicksort|[qsnote](https://github.com/ykz0608/DSA/blob/master/image/Quick%20sort.svg)|[qspy](https://github.com/ykz0608/DSA/blob/master/HW1/QuickSort.ipynb)|https://github.com/ykz0608/DSA/tree/master/HW1|
 |2|Mergesort/Mergesort|[merge sort筆記]/[heap sort筆記]|[mspy]/[hspy]|[HW2]| 
 |3|Binary Search Tree|[bst筆記]/[bst功能說明]|[bstpy]|[HW3]|
 |4|Hash Table|[hashtable筆記]|[htpy]|[HW4]|
