@@ -343,5 +343,6 @@
 
 ## :link:Reference
 所有來自網際網路的參考資料皆已附上超連結可供前往原網站 謝謝所有的原作者和协助者
+['Data Structures and Algorithms'](https://www.programiz.com/dsa),['Preface · GitBook'](https://yotsuba1022.gitbooks.io/data-structure-note/content/),['Introduction · 資料結構&演算法筆記'](https://algorithm.yuanbin.me/zh-tw/)
 
 
